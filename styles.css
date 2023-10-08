@@ -1,0 +1,52 @@
+/* Add your CSS styles here */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image-container{
+    width:200px;
+    height:300px;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 10px; /* Gap between images */
+}
+
+.image-container {
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    margin-bottom: 20px; /* Add some space between the image grid and text */
+}
+
+
+
+.linked-image {
+  width: 200px;
+  height: 150px;
+  /* Other styles as needed */
+}
+
+.text-container {
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.image-container:hover,
+.text-container:hover {
+    background-color: #f0f0f0;
+}
+
+.right-container {
+    flex: 2;
+    height: 700px; /* Set an appropriate height for your map */
+}
